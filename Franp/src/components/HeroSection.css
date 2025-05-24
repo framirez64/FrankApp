@@ -1,7 +1,7 @@
 
 /* Hero section */
 section {
-  background-image: url('./assets/Omaha.svg');
+  background-image: url('../assets/Omaha.svg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

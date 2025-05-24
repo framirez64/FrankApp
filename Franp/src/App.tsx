@@ -1,23 +1,37 @@
+import { Routes, Route, Link } from 'react-router-dom'
 import HomeIcon from './assets/Home.svg'
+import HeroSection from './components/HeroSection'
+import About from './components/About'
+import Projects from './components/Projects'
+import Resume from './components/Resume'
+import Contact from './components/Contact'
+import Activities from './components/Activities'
 import './App.css'
-import HeroSection from './HeroSection'
+
 function App() {
   return (
     <>
       <header>
         <nav>
           <ul>
-            <li><a href="/"><img src={HomeIcon} alt="Home" className="home-icon" /></a></li>  
-            <li><a href="/about">/about</a></li>
-            <li><a href="/projects">/projects</a></li>
-            <li><a href="/resume">/resume</a></li>
-            <li><a href="/activities">/activities</a></li>
-            <li><a href="/contact">/contact</a></li>
+            <li><Link to="/"><img src={HomeIcon} alt="Home" className="home-icon" /></Link></li>  
+            <li><Link to="/about">About</Link></li>
+            <li><Link to="/projects">Projects</Link></li>
+            <li><Link to="/resume">Resume</Link></li>
+            <li><Link to="/activities">Activities</Link></li>
+            <li><Link to="/contact">Contact</Link></li>
           </ul>
         </nav>
       </header>
       <main>
-        <HeroSection />
+        <Routes>
+          <Route path="/" element={<HeroSection />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/projects" element={<Projects />} />
+          <Route path="/resume" element={<Resume />} />
+          <Route path="/activities" element={<Activities />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
       </main>
     </>
   )

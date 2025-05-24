@@ -1,6 +1,6 @@
-import GithubIcon from './assets/Github.svg'
-import LinkedInIcon from './assets/LinkedIn.svg' // You'll need this icon
-import HuggingFaceIcon from './assets/HuggingFace.svg'
+import GithubIcon from '../assets/Github.svg'
+import LinkedInIcon from '../assets/LinkedIn.svg' // You'll need this icon
+import HuggingFaceIcon from '../assets/HuggingFace.svg'
 import './HeroSection.css'
 function HeroSection() {
   const socialLinks = [
