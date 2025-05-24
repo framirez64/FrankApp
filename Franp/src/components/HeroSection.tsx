@@ -1,5 +1,5 @@
 import GithubIcon from '../assets/Github.svg'
-import LinkedInIcon from '../assets/LinkedIn.svg' // You'll need this icon
+import LinkedInIcon from '../assets/LinkedIn.svg' 
 import HuggingFaceIcon from '../assets/HuggingFace.svg'
 import './HeroSection.css'
 function HeroSection() {
@@ -22,7 +22,7 @@ function HeroSection() {
   ]
 
   return (
-    <section>
+    <section className = "hero-section">
       <h2>Francisco 'Frank'</h2>
       <h1>Jesús Ramírez-Reyna</h1>
       <p>Software Developer</p>

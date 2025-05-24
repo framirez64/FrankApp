@@ -1,0 +1,101 @@
+/* Update your section to use flexbox layout */
+section.about-section {
+  font-family: 'Solway', serif !important;
+  padding: 20px !important;
+  background-color: black !important;
+  min-height: calc(100vh - 60px); 
+  width: 100%;
+  display: flex; 
+  gap: 40px; 
+}
+
+/* Sidebar styling */
+.about-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 150px; 
+  flex-shrink: 0; 
+  padding-top: 15%; 
+}
+
+.about-sidebar-item {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 1.5rem;
+  padding: 4px 8px; 
+  color: #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; 
+  box-sizing: border-box; 
+  min-width: 140px; /* Set minimum width to accommodate longest word */
+}
+
+.about-sidebar-item::after {
+  content: '• ';
+  color: #666;
+  transition: color 0.3s ease;
+  font-size: 1.5rem;
+  margin-left: 20px; /* Fixed spacing from text to dot */
+  flex-shrink: 0; /* Prevent dot from shrinking */
+}
+
+.about-sidebar-item.about-sidebar-active {
+  color: rgb(255, 255, 255);
+}
+
+.about-sidebar-item.about-sidebar-active::after {
+  color: white;
+}
+
+.about-sidebar-item:hover::after {
+  color: #aaa;
+}
+
+.about-section-text {
+  flex: 1; 
+  position: relative;
+  overflow: hidden;
+  display: flex;          
+  flex-direction: column; 
+}
+
+.about-section-text h1 {
+  font-family: 'Solway', serif;
+  font-size: 2rem;
+  margin-bottom: 7px;
+  color: rgb(255, 255, 255);
+  position: relative; 
+  text-align: center;
+}
+
+.esnupi-gif {
+  position: relative;
+  top: 0; 
+  left: 0;
+  width: 50px;
+  height: 50px;
+  animation: moveAcross 4.6s linear infinite;
+  z-index: 5;
+  margin-bottom: 10px;    
+  align-self: flex-start; 
+}
+.esnupi-gif img {
+  width:80%;
+  height: 80%;
+  object-fit: contain;
+}
+
+/* Animation keyframes */
+@keyframes moveAcross {
+    0% {
+    left: -60px;
+    top: 10px; 
+    }
+    100% {
+    left: calc(100% + 60px);
+    top: 10px; 
+    }
+}

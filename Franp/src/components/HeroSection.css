@@ -1,6 +1,6 @@
 
 /* Hero section */
-section {
+.hero-section {
   background-image: url('../assets/Omaha.svg');
   background-size: cover;
   background-position: center;

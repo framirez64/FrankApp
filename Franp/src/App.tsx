@@ -15,11 +15,11 @@ function App() {
         <nav>
           <ul>
             <li><Link to="/"><img src={HomeIcon} alt="Home" className="home-icon" /></Link></li>  
-            <li><Link to="/about">About</Link></li>
-            <li><Link to="/projects">Projects</Link></li>
-            <li><Link to="/resume">Resume</Link></li>
-            <li><Link to="/activities">Activities</Link></li>
-            <li><Link to="/contact">Contact</Link></li>
+            <li><Link to="/about">/about</Link></li>
+            <li><Link to="/projects">/projects</Link></li>
+            <li><Link to="/resume">/resume</Link></li>
+            <li><Link to="/activities">/activities</Link></li>
+            <li><Link to="/contact">/contact</Link></li>
           </ul>
         </nav>
       </header>
