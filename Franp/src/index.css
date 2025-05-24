@@ -1,4 +1,3 @@
-
 @font-face {
   font-family: 'Roboto Mono';
   src: url('./assets/fonts/Roboto-Mono-regular.woff2') format('woff2');
@@ -6,6 +5,7 @@
   font-style: normal;
   font-display: swap;
 }
+
 :root {
   color-scheme: light dark;
   color: white; 
@@ -21,8 +21,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  user-select: none; /* Applied globally */
+  cursor: default;   /* Applied globally */
 }
-
 
 body {
   font-family: 'Roboto Mono', monospace;
@@ -31,7 +32,6 @@ body {
   min-height: 100vh;
 }
 
-
 #root {
   min-height: 100vh;
 }
@@ -39,18 +39,18 @@ body {
 header {
   background-color: #0F0F0F; 
   position: relative; 
-  height: 60px; /* Set a fixed height for header */
+  height: 60px;
   width: 100%;
   padding: 20px;
   z-index: 10;
 }
 
-
+/* Combined navigation styling */
 nav ul {
   display: flex;
   list-style: none;
-  gap: 40px;
   align-items: center;
+  width: 100%; 
 }
 
 nav li {
@@ -64,6 +64,7 @@ nav a {
   font-size: 18px;
   padding: 8px 12px;
   transition: opacity 0.3s ease;
+  cursor: pointer; /* Override global cursor for links */
 }
 
 nav a:hover {
@@ -76,45 +77,24 @@ nav a:hover {
   height: 20px;
   filter: brightness(0) invert(1); 
 }
-nav ul {
-  display: flex;
-  list-style: none;
-  align-items: center;
-  width: 100%; 
-}
+
+/* Navigation spacing */
 nav li:first-child {
   margin-right: auto; 
 }
+
 nav li:not(:first-child) {
   flex: 1;
   text-align: center;
 }
+
 /* Main content */
 main {
   min-height: calc(100vh - 60px);
-  
 }
 
-/* Hero section */
-section {
-  background-image: url('./assets/Omaha.svg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  text-align: center;
-  /* Fill the entire main element */
-  height: calc(100vh - 60px);
-  width: 100%;
 
-  /* Center the content */
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  
-  padding: 40px;
-}
+
 /* Typography */
 h1 {
   font-size: 3rem;

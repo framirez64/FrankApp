@@ -1,11 +1,6 @@
-
-import GithubIcon from './assets/Github.svg'
 import HomeIcon from './assets/Home.svg'
-import HuggingFaceIcon from './assets/HuggingFace.svg'
-import OmahaIcon from './assets/Omaha.svg'
-import ArrowIcon from './assets/Arrow.svg'
 import './App.css'
-
+import HeroSection from './HeroSection'
 function App() {
   return (
     <>
@@ -22,11 +17,7 @@ function App() {
         </nav>
       </header>
       <main>
-        <section>
-          <h2>Francisco 'Frank'</h2>
-          <h1>Jesús Ramírez-Reyna</h1>
-          <p>Software Developer</p>
-        </section>
+        <HeroSection />
       </main>
     </>
   )
