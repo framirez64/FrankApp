@@ -5,7 +5,7 @@ import { Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-// Import your images from /src/assets
+// Image imports
 import Assistant1 from '../assets/project1/Assistant1.png';
 import Assistant3 from '../assets/project1/Assistant3.png';
 import Assistant4 from '../assets/project1/Assistant4.png';
@@ -17,6 +17,7 @@ import Hal1 from '../assets/project3/Hal1.png';
 
 function Projects() {
   const [activeSection, setActiveSection] = useState('first');
+  const [modalImage, setModalImage] = useState<string | null>(null);
 
   const projectSections = [
     {
@@ -65,7 +66,6 @@ function Projects() {
         <h1>{activeContent?.heading}</h1>
         <p>{activeContent?.content}</p>
 
-        {/* Medium-sized centered carousel */}
         <div className="project-carousel">
           <Swiper
             modules={[Pagination]}
@@ -78,13 +78,30 @@ function Projects() {
             {activeContent.slides.map((src, index) => (
               <SwiperSlide key={index}>
                 <div className="project-slide">
-                  <img src={src} alt={`Slide ${index}`} />
+                  <img
+                    src={src}
+                    alt={`Slide ${index}`}
+                    onClick={() => setModalImage(src)}
+                    style={{ cursor: 'pointer' }}
+                  />
                 </div>
               </SwiperSlide>
             ))}
           </Swiper>
         </div>
       </div>
+
+      {/* Modal */}
+      {modalImage && (
+        <div className="project-modal" onClick={() => setModalImage(null)}>
+          <div className="project-modal-content" onClick={e => e.stopPropagation()}>
+            <img src={modalImage} alt="Enlarged" />
+            <button className="project-modal-close" onClick={() => setModalImage(null)}>
+              ×
+            </button>
+          </div>
+        </div>
+      )}
     </section>
   );
 }
