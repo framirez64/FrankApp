@@ -38,7 +38,6 @@ function About() {
         <>
           <h1>Interests</h1>
           <p>I have lots of hobbies. Recently, I've become more active and enjoy rock climbing along with working out regularly. When I'm not working on personal projects, I enjoy reading; lately I've been reading more about recent developments in AI and theoretical applications for certain AI approaches.</p>
-          <p>What I enjoy outside of coding...</p>
         </>
       )
     }
