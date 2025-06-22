@@ -2,8 +2,71 @@ section.contact-section {
   font-family: 'Solway', serif !important;
   padding: 20px !important;
   background-color: black !important;
-  min-height: calc(100vh - 60px); 
+  min-height: calc(100vh - 60px);
   width: 100%;
-  display: flex; 
-  gap: 40px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  color: white;
+  text-align: center;
+}
+
+.contact-card {
+  background-color: #1c1c1c;
+  padding: 20px 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+  width: 100%;
+  max-width: 500px; /* wider card */
+  transition: transform 0.2s ease;
+}
+
+.contact-card:hover {
+  transform: translateY(-4px);
+}
+
+.contact-card h2 {
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.contact-card p {
+  margin: 6px 0;
+  font-size: 1rem;
+}
+
+.contact-field {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2a2a2a;
+  padding: 10px 16px;
+  margin-top: 12px;
+  border-radius: 8px;
+  font-size: 1rem;
+  gap: 12px;
+}
+
+.contact-field span {
+  flex: 1;
+  word-break: break-word;
+  text-align: left;
+}
+
+.contact-field button {
+  background-color: #444;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 6px 12px;
+  cursor: pointer;
+  font-family: inherit;
+  transition: background-color 0.2s ease;
+  white-space: nowrap;
+}
+
+.contact-field button:hover {
+  background-color: #666;
 }

@@ -34,7 +34,7 @@ function Resume() {
       id: 'intro',
       title: 'Intro',
       heading: 'About Me',
-      content: "Hello! My name is Francisco, but I typically go by Frank. I'm originally from México but I moved to Omaha, Nebraska when I was 6. I'm fluent in English and Spanish, and I'm trying to learn other languages like French and German. I'm a recent computer science graduate with a strong foundation in software engineering and a growing focus on AI integration. During my academic and project work, I developed full-stack applications, explored machine learning workflows, and learned how to connect intelligent systems to real-world software products. I enjoy building things that are not just functional, but smart—leveraging tools like APIs, LLMs, and automation frameworks to create efficient, user-friendly experiences. I'm eager to keep exploring ways to optimize workflows and assist growing businesses.",
+      content: "During my academic and project work, I developed full-stack applications, explored machine learning workflows, and learned how to connect intelligent systems to real-world software products. I enjoy building things that are not just functional, but smart—leveraging tools like APIs, LLMs, and automation frameworks to create efficient, user-friendly experiences. I'm eager to keep exploring ways to optimize workflows and assist growing businesses.",
       icons: [] // No icons for intro
     },
     {

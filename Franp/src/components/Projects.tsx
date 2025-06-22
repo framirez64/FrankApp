@@ -7,6 +7,7 @@ import 'swiper/css/pagination';
 
 // Image imports
 import Assistant1 from '../assets/project1/Assistant1.png';
+import Assistant2 from '../assets/project1/Assistant2.png';
 import Assistant3 from '../assets/project1/Assistant3.png';
 import Assistant4 from '../assets/project1/Assistant4.png';
 
@@ -25,7 +26,7 @@ function Projects() {
       title: 'Eidolon - Webapp',
       heading: 'AI Personal Assistant',
       content: 'stuff',
-      slides: [Assistant1, Assistant3, Assistant4],
+      slides: [Assistant1, Assistant2, Assistant3, Assistant4],
     },
     {
       id: 'second',
@@ -64,7 +65,6 @@ function Projects() {
 
       <div className="project-section-text">
         <h1>{activeContent?.heading}</h1>
-        <p>{activeContent?.content}</p>
 
         <div className="project-carousel">
           <Swiper
@@ -89,6 +89,8 @@ function Projects() {
             ))}
           </Swiper>
         </div>
+
+        <p>{activeContent?.content}</p>
       </div>
 
       {/* Modal */}
