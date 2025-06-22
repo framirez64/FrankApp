@@ -73,9 +73,9 @@ function Projects() {
             centeredSlides={true}
             slidesPerView={1}
             spaceBetween={20}
-            loop={activeContent.slides.length > 1}
+            loop={(activeContent?.slides?.length ?? 0) > 1}
           >
-            {activeContent.slides.map((src, index) => (
+            {activeContent?.slides.map((src, index) => (
               <SwiperSlide key={index}>
                 <div className="project-slide">
                   <img

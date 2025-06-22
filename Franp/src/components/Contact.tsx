@@ -2,9 +2,10 @@ import './Contact.css';
 import { useState } from 'react';
 
 function Contact() {
-  const [copied, setCopied] = useState({ field: null });
+  const [copied, setCopied] = useState<{ field: string | null }>({ field: null });
 
-  const handleCopy = (text, field) => {
+
+  const handleCopy = (text: string, field: string) => {
     navigator.clipboard.writeText(text).then(() => {
       setCopied({ field });
       setTimeout(() => setCopied({ field: null }), 2000);
