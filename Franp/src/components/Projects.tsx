@@ -39,7 +39,7 @@ function Projects() {
       id: 'third',
       title: 'HalGPT',
       heading: 'HAL9000 Voice Synthesis',
-      content: 'HalGPT was one of the first projects I made, I was inspired after watching 2001: A Space Oddysey. I found the voice chosen for HAL soothing and cool to listen to. I compiled all the voicelines from the movie and utilizing an open-source project called PiperTTS, I was able to clone the voice and train a model for speech syntehsis. I learned a lot about audio cleaning and voice transcribing along with being able to leverage the GPU acceleration library CUDA.',
+      content: 'HalGPT was one of the first projects I made, I was inspired after watching 2001: A Space Oddysey. I found the voice chosen for HAL soothing and cool to listen to. I compiled all the voicelines from the movie and utilizing an open-source project called PiperTTS, I was able to clone the voice and train a model for speech synthesis. I learned a lot about audio cleaning and voice transcribing along with being able to leverage the GPU acceleration library CUDA. I figured that an interface would be better than just using the command-line interface so I used PyQt to develop a desktop UI for the Text-to-Speech software to run on.',
       slides: [Hal1],
     },
   ];
