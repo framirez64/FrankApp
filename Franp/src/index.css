@@ -132,3 +132,45 @@ p {
     font-size: 1.5rem;
   }
 }
+.menu-toggle {
+  display: none;
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: white;
+  position: absolute;
+  left: 1rem; /* ⬅️ was right: 1rem */
+  top: 1rem;
+  z-index: 100;
+  cursor: pointer;
+}
+
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background: #0F0F0F;
+    position: absolute;
+    top: 60px;
+    left: 0; /* ⬅️ aligned under hamburger */
+    width: 200px;
+    padding: 20px;
+    z-index: 99;
+    border-right: 1px solid #333;
+  }
+
+
+  nav ul.open {
+    display: flex;
+  }
+
+  nav li {
+    text-align: left;
+    margin: 10px 0;
+  }
+}
